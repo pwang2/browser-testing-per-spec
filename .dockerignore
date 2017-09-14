@@ -1,0 +1,4 @@
+**/*
+!xvfb
+!entrypoint.sh
+!start-chrome.sh
