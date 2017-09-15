@@ -6,4 +6,4 @@ export DISPLAY=:1
 
 sleep 1s
 
-su chromeuser -c "tape-run"
+su chromeuser -c "tape-run -b chrome -"
