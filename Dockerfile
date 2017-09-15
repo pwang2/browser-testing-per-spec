@@ -4,7 +4,7 @@ RUN curl -sSL https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key ad
     echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list &&\
     curl -sSL https://deb.nodesource.com/setup_6.x | bash - && \
     apt-get update && \
-    apt-get install -qqy google-chrome-stable nodejs xvfb dbus-x11 && \
+    apt-get install -qqy google-chrome-unstable nodejs xvfb dbus-x11 && \
     apt-get clean -qqy && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
