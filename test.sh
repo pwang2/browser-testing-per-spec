@@ -12,7 +12,8 @@ if [[ $hasimg -eq 1 ]]; then
 fi
 
 function processFile() {
-  # surprisingly, docker container is faster then local tape-run
+  # surprisingly, docker container is faster than local tape-run
+  # local chrome will not exist unless call window.close
   #webpack $1 $2>/dev/null && cat $2 | tape-run --browser chrome
   webpack $1 $2>/dev/null && cat $2 | docker run --rm -i  --cap-add SYS_ADMIN tape-run
 }
